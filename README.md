@@ -29,7 +29,7 @@ If these versions are installed instead:
     "@wdio/spec-reporter": "^9.12.4",
     "undici": "^7.10.0"
 
-... the keep-alive error will disappear. This package: @wdio/local-runner appears to be the culprit though. You keep the rest of @wdio packages at v.9.12.5 and only downgrade that package to v.9.12.4 to make the error go away.
+... the keep-alive error will disappear. This package: @wdio/local-runner appears to be the culprit though. If you keep the rest of @wdio packages at v.9.12.5 and only downgrade @wdio/local-runner to v.9.12.4, the error will go away.
 
 At first, I thought this was a undici -> Browserstack related problem when using a proxy. This doesn't seem to be case since I was still able to reproduce the issue without using any proxy setting (wdio.conf.ts -> line:4).
 

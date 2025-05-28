@@ -4,6 +4,9 @@ To run test: npm run wdio
 
 To verify results: Go to the Browserstack Automate dashboard, check the "issues" tab in one of the tests on your latest run. The "HTTP keep-alive missing" error should be visible.
 
+node version: 20.8.0
+npm version: 10.1.0
+
 # Steps to reproduce the issue
 
 This is the version where the problem is introduced: 
